@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      /* div {
+        border: 1px solid black;
+        margin: 0px;
+      } */
+
+      .container {
+        /* margin: 0px 25%; */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text {
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+      }
+
+      .nav-item {
+        margin: 5px;
+      }
+
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #db3022;
+      }
+
+      .nav-pills .nav-link {
+        width: 125px;
+        height: 48px;
+        background-color: #efefef;
+        color: #9b9b9b;
+      }
+
+      /* .role {
+        display: flex;
+        justify-content: center;
+      }
+
+      .customer button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        background-color: #db3022;
+        color: white;
+        border-radius: 5px 0px 0px 5px;
+        height: 48px;
+        border: transparent;
+      }
+
+      .customer button:hover {
+        background-color: #cd2617;
+      }
+
+      .seller button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        color: #9b9b9b;
+        border-radius: 0px 5px 5px 0px;
+        background: #efefef;
+        height: 48px;
+        border: transparent;
+      }
+
+      .seller button:hover {
+        background-color: #e9e0e0;
+      } */
+
+      .register {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0px;
+      }
+
+      .register input {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 401px;
+        height: 48px;
+        border-radius: 5px;
+        background: #efefef;
+        border: 0px;
+        outline: none;
+        margin: 10px;
+      }
+
+      .Forgot {
+        display: flex;
+        justify-content: center;
+      }
+
+      .Forgot a {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 14px;
+        color: #db3022;
+        width: 400px;
+        text-decoration: none;
+        margin: 10px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+      }
+
+      .button button {
+        width: 401px;
+        height: 48px;
+        border: 0;
+        border-radius: 25px;
+        font-size: medium;
+        color: white;
+        background-color: #db3022;
+      }
+
+      .button button:hover {
+        background-color: #cd2617;
+      }
+
+      .toRegist {
+        display: flex;
+        justify-content: center;
+        color: #222222;
+      }
+
+      span a {
+        color: #db3022;
+        text-decoration: none;
+      }
+
+      span a:hover {
+        color: #db3022;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .text {
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          padding: 25px 0px;
+        }
+
+        .nav-pills .nav-link {
+          width: 90px;
+          height: 38px;
+          padding: 0;
+        }
+
+        .register input {
+          width: 301px;
+          height: 48px;
+        }
+
+        .button button {
+          width: 301px;
+          height: 48px;
+        }
+
+        .Forgot a {
+          width: 300px;
+        }
+
+        .toRegist {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="title">
+        <img src="../assets/image/Group 1158.png" />
+      </div>
+      <div class="text">
+        <p>Please login with your account</p>
+      </div>
+      <ul class="nav nav-pills mb-3 justify-content-center" role="tablist">
+        <li class="nav-item">
+          <button
+            class="nav-link active"
+            data-toggle="pill"
+            data-target="#customer"
+            type="button"
+          >
+            Customer
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-toggle="pill"
+            data-target="#seller"
+            type="button"
+          >
+            Seller
+          </button>
+        </li>
+      </ul>
+      <section class="tab-content">
+        <div class="tab-pane fade show active" id="customer">
+          <div class="register">
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="Forgot">
+            <a href="./forgot.html">Forgot password?</a>
+          </div>
+          <div class="button">
+            <a href="../Home.html"><button>LOGIN</button></a>
+          </div>
+          <div class="toRegist">
+            <p>
+              Don't have a Blanja account?
+              <span> <a href="./register.html">Register</a> </span>
+            </p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="seller">
+          <div class="register">
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="Forgot">
+            <a href="./forgot.html">Forgot password?</a>
+          </div>
+          <div class="button">
+            <a href="../Home.html"><button>LOGIN</button></a>
+          </div>
+          <div class="toRegist">
+            <p>
+              Don't have a Blanja account?
+              <span> <a href="./register.html">Register</a> </span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

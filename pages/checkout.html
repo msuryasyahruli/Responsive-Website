@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      /* div {
+        border: 1px solid;
+      } */
+
+      /* ---------------------header--------------------- */
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 40px #adadad40, -5px -5px 60px #fff;
+      }
+
+      .search-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        width: auto;
+        margin-right: 30px;
+      }
+
+      .search {
+        position: relative;
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      .search input {
+        border: 1px solid;
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        background: #efefef;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 60px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .search img {
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        align-items: center;
+      }
+
+      .filter {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: #efefef;
+        margin: 0px 10px;
+      }
+
+      .cart {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin: 10px;
+      }
+
+      .login a {
+        width: 100px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #db3022;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .login,
+      .signup {
+        margin: 0px 10px;
+      }
+
+      .login a:hover {
+        background-color: #cd2617;
+        text-decoration: none;
+        color: white;
+      }
+
+      .signup a {
+        width: 100px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefef;
+        border-radius: 50px;
+        color: #db3022;
+        text-decoration: none;
+      }
+
+      .signup a:hover {
+        background-color: #e8e0e0;
+        text-decoration: none;
+        color: #db3022;
+      }
+
+      /* ---------------------body--------------------- */
+
+      /* div {
+        border: 1px solid;
+      } */
+
+      .address {
+        height: auto;
+        box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        font-weight: 500;
+        padding: 25px;
+      }
+
+      .address button {
+        border: 0;
+        border-radius: 100px;
+        width: 210px;
+        height: 36px;
+      }
+
+      #select_all_items {
+        box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+        border-radius: 10px;
+        margin: 25px 0;
+        font-weight: 500;
+      }
+
+      .amount {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+      }
+
+      #select_product {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+        box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+      }
+
+      .summary {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .button_buy {
+        width: 100%;
+        height: 36px;
+        border: 0;
+        background-color: #db3022;
+        color: #fff;
+        border-radius: 20px;
+        left: auto;
+        right: auto;
+      }
+
+      .button_buy:hover {
+        background-color: #cd2617;
+      }
+
+      .payList {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .checkPayList {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container" style="padding: 0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="search-logo"
+            ><div class="logo">
+              <img src="../assets/image/Group 1159.png" />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="search">
+              <input type="text" placeholder="Search" />
+              <img src="../assets/image/Search Glyph.png" />
+            </div>
+
+            <form
+              class="form-inline my-2 my-lg-0"
+              style="display: flex; justify-content: space-between; width: 100%"
+            >
+              <div class="filter">
+                <img src="../assets/image/filter 1.png" />
+              </div>
+              <div style="display: flex">
+                <div class="cart">
+                  <a href="../pages/order.html"
+                    ><img src="../assets/image/shopping-cart (2) 1.png"
+                  /></a>
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/bell (1) 1.png" />
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/mail (3) 1.png" />
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/Mask Group (2).png" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 style="font-weight: 700; margin: 50px 0px 30px 0px">Checkout</h1>
+        <div class="row">
+          <div class="col-lg-8">
+            <p style="font-weight: 600; font-size: 16px">Shipping Address</p>
+            <section class="address">
+              <h5>Andreas Jane</h5>
+              <p style="font-weight: 400; margin-bottom: 20px">
+                Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja,
+                Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c
+                16] Sokaraja, Kab. Banyumas, 53181
+              </p>
+              <div>
+                <button>Choose another address</button>
+              </div>
+            </section>
+            <section class="row" id="select_product">
+              <div class="col-sm-10 col-10" style="padding: 3%">
+                <div>
+                  <img src="../assets/image/Mask Group (3).png" />
+                  <label style="line-height: 5px; padding: 10px">
+                    <p>Men's formal suit - Black</p>
+                    <p style="font-size: 12px; color: #9b9b9b">Zalora Cloth</p>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm- col-2" style="padding: 3%">
+                <p
+                  style="font-weight: 700; font-size: 16px; text-align: center;"
+                >
+                  Rp 80,000
+                </p>
+              </div>
+            </section>
+            <section class="row" id="select_product">
+              <div class="col-sm-10 col-10" style="padding: 3%">
+                <div>
+                  <img src="../assets/image/Mask Group (3).png" />
+                  <label style="line-height: 5px; padding: 10px">
+                    <p>Men's formal suit - Black</p>
+                    <p style="font-size: 12px; color: #9b9b9b">Zalora Cloth</p>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm- col-2" style="padding: 3%">
+                <p
+                  style="font-weight: 700; font-size: 16px; text-align: center"
+                >
+                  Rp 80,000
+                </p>
+              </div>
+            </section>
+            <section class="row" id="select_product">
+              <div class="col-sm-10 col-10" style="padding: 3%">
+                <div>
+                  <img src="../assets/image/Mask Group (3).png" />
+                  <label style="line-height: 5px; padding: 10px">
+                    <p width: auto;">Men's formal suit - Black</p>
+                    <p style="font-size: 12px; color: #9b9b9b">Zalora Cloth</p>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-2 col-2" style="padding: 3%">
+                <p
+                  style="font-weight: 700; font-size: 16px; text-align: center"
+                >
+                  Rp 80,000
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <section class="summary">
+              <p style="font-weight: 600; font-size: 16px">Shopping summary</p>
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <p style="color: #9b9b9b">Order</p>
+                  <p style="font-weight: 500; font-size: 18px; color: #222222">
+                    Rp 240,000
+                  </p>
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                  <p style="color: #9b9b9b">Delivery</p>
+                  <p style="font-weight: 500; font-size: 18px; color: #222222">
+                    Rp 10,000
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div style="display: flex; justify-content: space-between">
+                <p style="font-weight: 500; font-size: 16px; color: #222222">
+                  Total price
+                </p>
+                <p style="font-weight: 500; font-size: 18px; color: #db3022">
+                  Rp 250,000
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button_buy"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Select payment
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="header" style="padding: 15px;">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Payment
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <p>Payment method</p>
+                        <div class="payList">
+                          <div>
+                            <img src="../assets/image/gopay.png" />
+                          </div>
+                          <div class="checkPayList">
+                            <input type="checkbox" />
+                          </div>
+                        </div>
+                        <div class="payList">
+                          <div>
+                            <img src="../assets/image/POS.png" />
+                          </div>
+                          <div class="checkPayList">
+                            <input type="checkbox" />
+                          </div>
+                        </div>
+                        <div class="payList">
+                          <div>
+                            <img src="../assets/image/master card.png" />
+                          </div>
+                          <div class="checkPayList">
+                            <input type="checkbox" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <section class="summary-pay" style="width: 100%">
+                        <p style="font-weight: 600; font-size: 16px">
+                          Shopping summary
+                        </p>
+                        <div>
+                          <div
+                            style="
+                              display: flex;
+                              justify-content: space-between;
+                            "
+                          >
+                            <p style="color: #9b9b9b">Order</p>
+                            <p
+                              style="
+                                font-weight: 500;
+                                font-size: 18px;
+                                color: #222222;
+                              "
+                            >
+                            Rp 240,000
+                            </p>
+                          </div>
+                          <div
+                            style="
+                              display: flex;
+                              justify-content: space-between;
+                            "
+                          >
+                            <p style="color: #9b9b9b">Delivery</p>
+                            <p
+                              style="
+                                font-weight: 500;
+                                font-size: 18px;
+                                color: #222222;
+                              "
+                            >
+                            Rp 10,000
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                          "
+                        >
+                          <div>
+                            <p
+                              style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #222222;
+                              "
+                            >
+                              Total price<br /><span style="color: #db3022">
+                                Rp 250,000
+                              </span>
+                            </p>
+                          </div>
+                          <a href="./checkout.html">
+                            <button
+                              style="
+                                width: 160px;
+                                height: 36px;
+                                border: 0;
+                                background-color: #db3022;
+                                color: #fff;
+                                border-radius: 20px;
+                              "
+                            >
+                              Buy
+                            </button>
+                          </a>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

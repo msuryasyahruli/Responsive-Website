@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      /* div {
+        border: 1px solid black;
+        margin: 0px;
+      } */
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text {
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+      }
+
+      .register {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0px;
+      }
+
+      .register input {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 401px;
+        height: 48px;
+        border-radius: 5px;
+        background: #efefef;
+        border: 0px;
+        outline: none;
+        margin: 10px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+      }
+
+      .button button {
+        width: 401px;
+        height: 48px;
+        border: 0;
+        border-radius: 25px;
+        font-size: medium;
+        color: white;
+        background-color: #db3022;
+      }
+
+      .button button:hover {
+        background-color: #cd2617;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .text {
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          padding: 25px;
+        }
+
+        .register input {
+          width: 301px;
+          height: 48px;
+        }
+
+        .button button {
+          width: 301px;
+          height: 48px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="title">
+        <img src="../assets/image/Group 1158.png" />
+      </div>
+      <div class="text">
+        <p>Reset password</p>
+      </div>
+      <div style="color: #db3022">
+        <p>You need to change your password to activate your account</p>
+      </div>
+      <div class="register">
+        <input type="password" placeholder="New Password" />
+        <input type="password" placeholder="Confirmation New Password" />
+      </div>
+      <div class="button">
+        <a href="./login.html"><button>NEXT</button></a>
+      </div>
+    </section>
+  </body>
+</html>

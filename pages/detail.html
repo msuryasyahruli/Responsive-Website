@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      /* div {
+        border: 1px solid;
+      } */
+
+      /* ---------------------header--------------------- */
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 40px #adadad40, -5px -5px 60px #fff;
+      }
+
+      .search-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        width: auto;
+        margin-right: 30px;
+      }
+
+      .search {
+        position: relative;
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      .search input {
+        border: 1px solid;
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+        background: #efefef;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 60px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .search img {
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        align-items: center;
+      }
+
+      .filter {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: #efefef;
+        margin: 0px 10px;
+      }
+
+      .cart {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin: 10px;
+      }
+
+      .amount {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+      }
+
+      /* ---------------------main--------------------- */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="padding: 0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="search-logo"
+            ><div class="logo">
+              <img src="../assets/image/Group 1159.png" />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="search">
+              <input type="text" placeholder="Search" />
+              <img src="../assets/image/Search Glyph.png" />
+            </div>
+
+            <form
+              class="form-inline my-2 my-lg-0"
+              style="display: flex; justify-content: space-between; width: 100%"
+            >
+              <div class="filter">
+                <img src="../assets/image/filter 1.png" />
+              </div>
+              <div style="display: flex">
+                <div class="cart">
+                  <a href="../pages/order.html"
+                    ><img src="../assets/image/shopping-cart (2) 1.png"
+                  /></a>
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/bell (1) 1.png" />
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/mail (3) 1.png" />
+                </div>
+                <div class="cart">
+                  <img src="../assets/image/Mask Group (2).png" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <p style="margin: 30px 0; color: #9b9b9b">Home > category > T-Shirt</p>
+        <div class="row">
+          <section class="col-lg-4">
+            <div>
+              <img src="../assets/image/imgProfile.png" style="width: 100%" />
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+              "
+            >
+              <div style="width: 18%">
+                <img
+                  src="../assets/image/imgProfile1.png"
+                  style="width: 100%"
+                />
+              </div>
+              <div style="width: 18%">
+                <img
+                  src="../assets/image/imgProfile2.png"
+                  style="width: 100%"
+                />
+              </div>
+              <div style="width: 18%">
+                <img
+                  src="../assets/image/imgProfile3.png"
+                  style="width: 100%"
+                />
+              </div>
+              <div style="width: 18%">
+                <img
+                  src="../assets/image/imgProfile4.png"
+                  style="width: 100%"
+                />
+              </div>
+              <div style="width: 18%">
+                <img
+                  src="../assets/image/imgProfile5.png"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="col-lg-8">
+            <p style="font-size: 28px; font-weight: 600; line-height: 25px">
+              Baju muslim pria<br /><span
+                style="font-size: 16px; font-weight: 500; color: #9b9b9b"
+                >Zalora Cloth</span
+              ><br /><img src="../assets/image/Rating 5 stars.png" />
+            </p>
+            <p style="color: #9b9b9b">
+              Price<br /><span
+                style="font-size: 33px; font-weight: 700; color: black"
+                >Rp 80,000</span
+              >
+            </p>
+            <div>
+              <p style="margin: 0; font-weight: 600; font-size: 16px">Color</p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  width: 180px;
+                "
+              >
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    margin: 5px 0;
+                    background-color: #1a1a1a;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    margin: 5px 0;
+                    background-color: #d84242;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    margin: 5px 0;
+                    background-color: #4290d8;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    margin: 5px 0;
+                    background-color: #42d86c;
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 col" style="margin: 10px 0;">
+                <p style="font-weight: 600; font-size: 16px; margin: 0">Size</p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                  "
+                >
+                  <div class="amount" style="background-color: #d4d4d4">
+                    <img src="../assets/image/min.png" />
+                  </div>
+                  <div class="amount">
+                    <h6>26</h6>
+                  </div>
+                  <div
+                    class="amount"
+                    style="box-shadow: 0px 0px 10px #29292940"
+                  >
+                    <img src="../assets/image/plus.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col" style="margin: 10px 0;">
+                <p style="font-weight: 600; font-size: 16px; margin: 0">Jumlah</p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                  "
+                >
+                  <div class="amount" style="background-color: #d4d4d4">
+                    <img src="../assets/image/min.png" />
+                  </div>
+                  <div class="amount">
+                    <h6>1</h6>
+                  </div>
+                  <div
+                    class="amount"
+                    style="box-shadow: 0px 0px 10px #29292940"
+                  >
+                    <img src="../assets/image/plus.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 col-6" style="padding: 10px">
+                <p
+                  style="
+                    height: 48px;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #efefef;
+                  "
+                >
+                  Chat
+                </p>
+              </div>
+              <div class="col-sm-3 col-6" style="padding: 10px">
+                <p
+                  style="
+                    height: 48px;
+                    width: auto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #efefef;
+                  "
+                >
+                  Add bag
+                </p>
+              </div>
+              <div class="col-sm-6" style="padding: 10px">
+                <p
+                  style="
+                    height: 48px;
+                    width: auto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #db3022;
+                    color: #efefef;
+                  "
+                >
+                  Buy Now
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div>
+          <p style="font-weight: 600; font-size: 28px">Informasi Produk</p>
+          <section>
+            <p style="font-weight: 600; font-size: 20px; margin: 0">
+              Condition
+            </p>
+            <p style="font-weight: 500; font-size: 20px; color: #db3022">New</p>
+          </section>
+          <section>
+            <p style="font-weight: 600; font-size: 20px">Description</p>
+            <p style="font-weight: 500; font-size: 14px; color: #9b9b9b">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p style="font-weight: 500; font-size: 14px; color: #9b9b9b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              natus inventore ab enim aut veniam hic non reprehenderit
+              reiciendis harum quibusdam debitis, adipisci beatae unde eius, quo
+              dolores? Fuga quaerat porro, deleniti quibusdam vel eius, nostrum
+              accusamus iure excepturi alias mollitia rerum recusandae natus sed
+              veniam perferendis adipisci, ducimus non!
+            </p>
+            <p style="font-weight: 500; font-size: 14px; color: #9b9b9b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium nulla eos enim libero, quisquam delectus omnis hic?
+              Nostrum culpa sunt fuga ex, voluptas voluptatem mollitia!
+            </p>
+            <p style="font-weight: 500; font-size: 14px; color: #9b9b9b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              vero?
+            </p>
+          </section>
+          <section>
+            <p>Product review</p>
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-5">
+                <p style="font-weight: 500; font-size: 60px">
+                  5<span style="font-size: 20px; color: #9b9b9b">/5</span>
+                </p>
+                <div style="display: flex; justify-content: space-between">
+                  <div style="width: 22.29px">
+                    <img src="../assets/image/Star.png" style="width: 100%" />
+                  </div>
+                  <div style="width: 22.29px">
+                    <img src="../assets/image/Star.png" style="width: 100%" />
+                  </div>
+                  <div style="width: 22.29px">
+                    <img src="../assets/image/Star.png" style="width: 100%" />
+                  </div>
+                  <div style="width: 22.29px">
+                    <img src="../assets/image/Star.png" style="width: 100%" />
+                  </div>
+                  <div style="width: 22.29px">
+                    <img src="../assets/image/Star.png" style="width: 100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-6" style="padding: 0">
+                <div
+                  style="
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <img src="../assets/image/Star.png" />
+                  </div>
+                  <div>
+                    <p style="height: 5px">5</p>
+                  </div>
+                  <div
+                    style="
+                      width: 120px;
+                      height: 8px;
+                      background-color: #9a9a9a;
+                      border-radius: 5px;
+                    "
+                  ></div>
+                  <p style="height: 5px">4</p>
+                </div>
+                <div
+                  style="
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <img src="../assets/image/Star.png" />
+                  </div>
+                  <div>
+                    <p style="height: 5px">4</p>
+                  </div>
+                  <div
+                    style="
+                      width: 120px;
+                      height: 8px;
+                      background-color: transparent;
+                      border-radius: 5px;
+                    "
+                  ></div>
+                  <p style="height: 5px">0</p>
+                </div>
+                <div
+                  style="
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <img src="../assets/image/Star.png" />
+                  </div>
+                  <div>
+                    <p style="height: 5px">3</p>
+                  </div>
+                  <div
+                    style="
+                      width: 120px;
+                      height: 8px;
+                      background-color: transparent;
+                      border-radius: 5px;
+                    "
+                  ></div>
+                  <p style="height: 5px">0</p>
+                </div>
+                <div
+                  style="
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <img src="../assets/image/Star.png" />
+                  </div>
+                  <div>
+                    <p style="height: 5px">2</p>
+                  </div>
+                  <div
+                    style="
+                      width: 120px;
+                      height: 8px;
+                      background-color: transparent;
+                      border-radius: 5px;
+                    "
+                  ></div>
+                  <p style="height: 5px">0</p>
+                </div>
+                <div
+                  style="
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <img src="../assets/image/Star.png" />
+                  </div>
+                  <div>
+                    <p style="height: 5px">1</p>
+                  </div>
+                  <div
+                    style="
+                      width: 120px;
+                      height: 8px;
+                      background-color: transparent;
+                      border-radius: 5px;
+                    "
+                  ></div>
+                  <p style="height: 5px">0</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section>
+            <div
+              style="
+                margin: 20px 0;
+                font-size: 34px;
+                font-weight: 700;
+                line-height: normal;
+              "
+            >
+              <p>You can also like this</p>
+              <p style="font-size: 12px; color: #9b9b9b">
+                You’ve never seen it before!
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                  <img
+                    class="w-100"
+                    src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                    alt="cloth"
+                  />
+                  <div class="p-2">
+                    <h5 class="card-title">
+                      Men's formal suit - Black & White
+                    </h5>
+                    <h5 class="text-danger">Rp 80,000</h5>
+                    <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
