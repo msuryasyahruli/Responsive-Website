@@ -1,6 +1,7 @@
 /* div {
-        border: 1px solid;
-      } */
+  border: 1px solid;
+} */
+
 body {
   padding: 0;
   margin: 0;
@@ -111,4 +112,14 @@ header {
   background-color: #e8e0e0;
   text-decoration: none;
   color: #db3022;
+}
+
+#promotionIndicators {
+  margin: 20px 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  #promotionIndicators {
+    margin: 10px 0;
+  }
 }
